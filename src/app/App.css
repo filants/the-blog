@@ -1,3 +1,13 @@
+/* Custom Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=DM+Serif+Display&display=swap");
+
+/* 
+
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'DM Serif Display', serif;
+      
+*/
+
 .App {
   text-align: center;
 }
