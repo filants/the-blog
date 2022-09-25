@@ -1,48 +1,119 @@
-/* Custom Fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=DM+Serif+Display&display=swap");
-
-/* 
-
-      font-family: 'DM Sans', sans-serif;
-      font-family: 'DM Serif Display', serif;
-      
-*/
-
-.App {
-  text-align: center;
+#root {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+mark,
+hgroup,
+button,
+label,
+span {
+  font-family: "DM Serif Display", serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+hr {
+  height: 0.5px;
+  border-width: 0;
+  color: grey;
+  background-color: grey;
+}
+
+header {
+  margin: 2em 0 1em 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header button,
+header input {
+  margin-bottom: 15px;
+}
+
+/* _______ SEARCH FORM _______ */
+
+.Header__SearchField {
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px solid black;
+  height: 24px;
+  width: 115px;
+}
+
+.Header__SearchField:focus {
+  border-radius: 0;
+  outline: none;
+  border-bottom: 0.5px solid #0032ff;
+  height: 24px;
+}
+
+.Header__SearchField::placeholder {
+  font-family: "DM Serif Display", serif;
+  opacity: 0.7;
+}
+
+.Header__SearchIcon {
+  height: 24px;
+  width: 24px;
+  border: 1px solid black;
+  vertical-align: bottom;
+  background: url(./icons/search_white.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  cursor: pointer;
+}
+
+.Header__SearchIcon:hover {
+  border: 1px solid #0032ff;
+  background-color: #0032ff;
+}
+
+.Header__SearchIcon:active {
+  border: 1px solid #0032ff;
+  background: url(./icons/search_blue.svg);
+  background-color: white;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* _______ HEADER BTNs _______ */
+
+.Header__Button {
+  border: none;
+  border-radius: 0;
+  background-color: black;
   color: white;
+  padding: 3px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Header__Button:hover {
+  background-color: #0032ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header__Button:active {
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 1px #0032ff;
+  color: #0032ff;
+}
+
+.Header__Button:last-child {
+  margin-left: 0.5em;
 }

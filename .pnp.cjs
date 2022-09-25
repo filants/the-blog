@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:13.5.0"],\
+            ["modern-css-reset", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:18.2.0"],\
             ["react-scripts", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:5.0.1"],\
@@ -11583,6 +11584,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["modern-css-reset", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/modern-css-reset-npm-1.4.0-d79ae0c49d-b515d1b669.zip/node_modules/modern-css-reset/",\
+          "packageDependencies": [\
+            ["modern-css-reset", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ms", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/ms-npm-2.0.0-9e1101a471-0e6a22b8b7.zip/node_modules/ms/",\
@@ -15882,6 +15892,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:13.5.0"],\
+            ["modern-css-reset", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:18.2.0"],\
             ["react-scripts", "virtual:47136f6c6ce1eedec1d3b906eae8b999760a5a7e8e9d83c31971e3803849935fed9e0dc658a83b5835ad8bdb1f08ba5617c5809c99dade09f176ad0f41adffd5#npm:5.0.1"],\
