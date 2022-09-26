@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../../logo.svg";
 
-const Header = () => {
+const Header = ({ navBarOpen, setNavBarOpen }) => {
   return (
     <>
       <header>
@@ -15,8 +15,15 @@ const Header = () => {
         </form>
         <img src={Logo} alt="the.blog logo" />
         <div>
-          <button className="Header__Button">Anmelden</button>
-          <button className="Header__Button">Menu</button>
+          <button className="Header__Button">
+            <a href="/login">Anmelden</a>
+          </button>
+          <button
+            className="Header__Button"
+            onClick={() => setNavBarOpen(!navBarOpen)}
+          >
+            Menu
+          </button>
         </div>
       </header>
       <hr />

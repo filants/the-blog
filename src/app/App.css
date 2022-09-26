@@ -1,13 +1,17 @@
 #root {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   font-family: "DM Sans", sans-serif;
 }
 
+a,
 b,
 h1,
 h2,
@@ -28,6 +32,19 @@ hr {
   border-width: 0;
   color: grey;
   background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ul li {
+  list-style: none;
 }
 
 header {
@@ -116,4 +133,32 @@ header input {
 
 .Header__Button:last-child {
   margin-left: 0.5em;
+}
+
+/* _______ NAVIGATION _______ */
+
+.Header__Nav--Open {
+  padding-top: 5em;
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.Header__Nav--Closed {
+  display: none;
+}
+
+.Header__Nav--Open li a {
+  font-family: "DM Serif Display", serif;
+  font-size: 4em;
+  line-height: 1.8em;
+}
+
+.Header__Nav--Open li a:hover {
+  color: #0032ff;
+}
+.Header__Nav--Open li a:active {
+  opacity: 0.5;
 }
