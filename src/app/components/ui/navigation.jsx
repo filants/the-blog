@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MenuOverlay = ({ navBarOpen, setNavBarOpen }) => {
   return (
@@ -10,34 +11,54 @@ const MenuOverlay = ({ navBarOpen, setNavBarOpen }) => {
       }
     >
       <li>
-        <a href="/" onClick={() => setNavBarOpen(false)}>
+        <Link onClick={() => setNavBarOpen(false)} aria-current="page" to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/natur" onClick={() => setNavBarOpen(false)}>
+        <Link
+          onClick={() => setNavBarOpen(false)}
+          aria-current="page"
+          to="/natur"
+        >
           Natur
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/Landschaft" onClick={() => setNavBarOpen(false)}>
+        <Link
+          onClick={() => setNavBarOpen(false)}
+          aria-current="page"
+          to="/landschaft"
+        >
           Landschaft
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/reisen" onClick={() => setNavBarOpen(false)}>
+        <Link
+          onClick={() => setNavBarOpen(false)}
+          aria-current="page"
+          to="/reisen"
+        >
           Reisen
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/kontakt" onClick={() => setNavBarOpen(false)}>
+        <Link
+          onClick={() => setNavBarOpen(false)}
+          aria-current="page"
+          to="/kontakt"
+        >
           Kontakt
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/impressum" onClick={() => setNavBarOpen(false)}>
+        <Link
+          onClick={() => setNavBarOpen(false)}
+          aria-current="page"
+          to="/impressum"
+        >
           Impressum
-        </a>
+        </Link>
       </li>
     </ul>
   );

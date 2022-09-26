@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../logo.svg";
 
 const Header = ({ navBarOpen, setNavBarOpen }) => {
@@ -16,7 +17,7 @@ const Header = ({ navBarOpen, setNavBarOpen }) => {
         <img src={Logo} alt="the.blog logo" />
         <div>
           <button className="Header__Button">
-            <a href="/login">Anmelden</a>
+            <Link to="/login">Anmelden</Link>
           </button>
           <button
             className="Header__Button"
